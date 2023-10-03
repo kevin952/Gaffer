@@ -19,7 +19,6 @@ import org.junit.jupiter.api.Test;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
-import java.util.TreeSet;
 import java.util.stream.IntStream;
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -97,7 +96,7 @@ public class OneOrMoreTest {
         // Given
         final boolean deduplicate = true;
         final OneOrMore<Integer> collection = new OneOrMore<>(deduplicate);
-        final Set<Integer> expectedItems = new TreeSet<>();
+        final Set<Integer> expectedItems = new HashSet<>();
         IntStream.rangeClosed(1, 200).forEach(expectedItems::add);
 
         // When
