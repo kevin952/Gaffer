@@ -17,7 +17,6 @@
 package uk.gov.gchq.gaffer.commonutil;
 
 import org.junit.jupiter.api.Test;
-
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
